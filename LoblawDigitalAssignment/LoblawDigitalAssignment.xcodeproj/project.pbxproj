@@ -19,7 +19,7 @@
 		B06ABE4924367185008AD6A1 /* TableViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE4824367185008AD6A1 /* TableViewModelable.swift */; };
 		B06ABE4C24367247008AD6A1 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE4B24367247008AD6A1 /* ArticleTableViewCell.swift */; };
 		B06ABE4E24367297008AD6A1 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE4D24367297008AD6A1 /* Configurable.swift */; };
-		B06ABE54243678C4008AD6A1 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE53243678C4008AD6A1 /* Articles.swift */; };
+		B06ABE54243678C4008AD6A1 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE53243678C4008AD6A1 /* Listing.swift */; };
 		B06ABE5724367BA4008AD6A1 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE5624367BA4008AD6A1 /* UIViewControllerExtensions.swift */; };
 		B06ABE59243681F3008AD6A1 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE58243681F3008AD6A1 /* ImageService.swift */; };
 		B06ABE5B2436886D008AD6A1 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06ABE5A2436886D008AD6A1 /* StringExtensions.swift */; };
@@ -58,7 +58,7 @@
 		B06ABE4824367185008AD6A1 /* TableViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelable.swift; sourceTree = "<group>"; };
 		B06ABE4B24367247008AD6A1 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		B06ABE4D24367297008AD6A1 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
-		B06ABE53243678C4008AD6A1 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
+		B06ABE53243678C4008AD6A1 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		B06ABE5624367BA4008AD6A1 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		B06ABE58243681F3008AD6A1 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		B06ABE5A2436886D008AD6A1 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		B06ABE3D24366B5E008AD6A1 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				B06ABE53243678C4008AD6A1 /* Articles.swift */,
+				B06ABE53243678C4008AD6A1 /* Listing.swift */,
 				B06ABE3E24366BDD008AD6A1 /* Article.swift */,
 			);
 			path = Entities;
@@ -322,7 +322,7 @@
 				B06ABE4E24367297008AD6A1 /* Configurable.swift in Sources */,
 				B06ABE3F24366BDD008AD6A1 /* Article.swift in Sources */,
 				B0B420EC24377E43006E5696 /* ArticleTableViewController.swift in Sources */,
-				B06ABE54243678C4008AD6A1 /* Articles.swift in Sources */,
+				B06ABE54243678C4008AD6A1 /* Listing.swift in Sources */,
 				B06ABE4624367027008AD6A1 /* ArticlesViewModel.swift in Sources */,
 				B0B420EE24377FDC006E5696 /* ImageTableViewCell.swift in Sources */,
 				B06ABE59243681F3008AD6A1 /* ImageService.swift in Sources */,

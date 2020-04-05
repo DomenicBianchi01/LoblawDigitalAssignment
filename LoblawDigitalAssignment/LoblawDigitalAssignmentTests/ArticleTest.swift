@@ -32,7 +32,7 @@ class ArticleTests: XCTestCase {
     // MARK: Private
     
     private lazy var articlesData = {
-        try? JSONDecoder().decode(Articles.self, from: articlesJson.data(using: .utf8) ?? Data())
+        try? JSONDecoder().decode(Listing.self, from: articlesJson.data(using: .utf8) ?? Data())
     }()
     
     private let articlesJson =

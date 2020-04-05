@@ -1,5 +1,5 @@
 //
-//  Articles.swift
+//  Listing.swift
 //  LoblawDigitalAssignment
 //
 //  Created by Domenic Bianchi on 2020-04-02.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-// MARK: - Articles
+// MARK: - Listing
 
-class Articles: Decodable {
+struct Listing: Decodable {
     
     // MARK: CodingKeys
     
@@ -25,7 +25,7 @@ class Articles: Decodable {
         self.articles = articles
     }
     
-    required convenience init(from decoder: Decoder) throws {
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let data = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)
         let articles = try data.decode([Article].self, forKey: .children)
