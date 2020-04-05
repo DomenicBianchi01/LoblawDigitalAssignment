@@ -12,7 +12,7 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
 
-    // MARK: - IBOutlets
+    // MARK: IBOutlets
     
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var loadingIndicator: UIActivityIndicatorView!
@@ -25,9 +25,8 @@ class ArticleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        // Manual configuration required since the app needs to support iOS 12
-        if traitCollection.userInterfaceStyle == .dark {
-            loadingIndicator.style = .white
+        if #available(iOS 13, *) {
+            loadingIndicator.style = .medium
         }
     }
     

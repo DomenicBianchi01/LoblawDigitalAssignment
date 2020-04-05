@@ -12,7 +12,7 @@ import UIKit
 
 class ImageTableViewCell: UITableViewCell {
 
-    // MARK: - IBOutlets
+    // MARK: IBOutlets
     
     @IBOutlet private var centeredImageView: UIImageView!
     

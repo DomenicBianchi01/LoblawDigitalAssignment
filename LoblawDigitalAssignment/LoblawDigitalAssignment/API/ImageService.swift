@@ -18,7 +18,7 @@ class ImageService {
      Similar to `JSONService` except this service will return a `UIImage`.
      
      - parameter url: The URL of the image
-     - parameter completion: If successful, returns a `UIImage`, otherwise an `Error`
+     - parameter completion: If successful, contains a `UIImage`, otherwise a `NetworkError`
     */
     func fetchImage(from urlString: String, with completion: @escaping ((Result<UIImage, NetworkError>) -> Void)) {
         guard urlString.isValidUrl, let url = URL(string: urlString) else {

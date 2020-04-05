@@ -13,7 +13,7 @@ import UIKit
 /// Use this class to perform HTTP requests.
 class JSONService {
     
-    // MARK: - RequestType
+    // MARK: RequestType
     
     /// Used to specify the type of request that should be made
     enum RequestType: String {
@@ -23,6 +23,8 @@ class JSONService {
         case delete = "DELETE"
         case patch = "PATCH"
     }
+    
+    // MARK: Internal
     
     /**
      Fetch JSON data and parse it according to the `type` parameter in the function. In other words, the `url` must return JSON that maps to `type`.

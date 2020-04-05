@@ -38,11 +38,7 @@ class Article: Decodable {
         let body = try article.decode(String.self, forKey: .body)
         let thumbnailUrl = try article.decode(String.self, forKey: .thumbnailUrl)
         
-        if thumbnailUrl == "self" || thumbnailUrl == "default" {
-            self.init(title: title, body: body, thumbnailUrl: nil)
-        } else {
-            self.init(title: title, body: body, thumbnailUrl: thumbnailUrl)
-        }
+        self.init(title: title, body: body, thumbnailUrl: thumbnailUrl.isValidUrl ? thumbnailUrl : nil)
     }
     
     let title: String

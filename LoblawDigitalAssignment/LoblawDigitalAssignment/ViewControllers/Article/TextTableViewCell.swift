@@ -12,7 +12,7 @@ import UIKit
 
 class TextTableViewCell: UITableViewCell {
 
-    // MARK: - IBOutlets
+    // MARK: IBOutlets
     
     @IBOutlet private var bodyLabel: UILabel!
     

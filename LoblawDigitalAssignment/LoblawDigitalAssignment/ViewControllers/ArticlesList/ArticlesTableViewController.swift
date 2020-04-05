@@ -22,9 +22,8 @@ class ArticlesTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Manual configuration required since the app needs to support iOS 12
-        if traitCollection.userInterfaceStyle == .dark {
-            loadingIndicator.style = .white
+        if #available(iOS 13, *) {
+            loadingIndicator.style = .large
         }
         
         let refreshControl = UIRefreshControl()
