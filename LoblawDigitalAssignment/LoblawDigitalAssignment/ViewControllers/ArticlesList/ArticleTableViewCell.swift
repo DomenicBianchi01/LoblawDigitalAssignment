@@ -57,12 +57,13 @@ extension ArticleTableViewCell: Configurable {
         if article.thumbnailUrl == nil {
             loadingIndicator.stopAnimating()
             articleImageViewTopConstraint.constant = 0
-            articleImageViewHeightConstraint.constant = 0
+            articleImageViewHeightConstraint.isActive = false
         } else {
             articleImageViewTopConstraint.constant = 10
-            articleImageViewHeightConstraint.constant = 75
+            articleImageViewHeightConstraint.isActive = true
             
             if article.image != nil {
+                articleImageViewHeightConstraint.isActive = false
                 loadingIndicator.stopAnimating()
             }
         }

@@ -135,9 +135,6 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hGp-HM-Fnl">
                                                     <rect key="frame" x="40" y="11" width="334" height="155"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="200" id="2lI-1n-29r"/>
-                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
