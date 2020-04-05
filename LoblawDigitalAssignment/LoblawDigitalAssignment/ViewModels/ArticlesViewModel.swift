@@ -17,10 +17,10 @@ class ArticlesViewModel {
     private(set) var selectedArticle: Article? = nil
     
     func fetchArticles(completion: @escaping (Result<Void, NetworkError>) -> Void) {
-        JSONService().request(from: "https://www.reddit.com/r/swift/.json", expecting: Articles.self) { result in
+        JSONService().request(from: "https://www.reddit.com/r/swift/.json", expecting: Listing.self) { result in
             switch result {
-            case .success(let articles):
-                self.articles = articles.articles
+            case .success(let listing):
+                self.articles = listing.data.children
                 
                 let imageService = ImageService()
     

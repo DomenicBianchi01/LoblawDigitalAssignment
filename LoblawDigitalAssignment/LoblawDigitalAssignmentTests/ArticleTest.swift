@@ -16,23 +16,23 @@ class ArticleTests: XCTestCase {
     // MARK: Internal
     
     func testArticleCount() {
-        XCTAssertEqual(articlesData?.articles.count, 2)
+        XCTAssertEqual(articlesData?.data.children.count, 2)
     }
     
     func testArticleContents() {
-        XCTAssertEqual(articlesData?.articles[0].title, "this is a random title")
-        XCTAssertEqual(articlesData?.articles[0].body, "this is a random body")
-        XCTAssertEqual(articlesData?.articles[0].thumbnailUrl, "https://b.thumbs.redditmedia.com/ZCc1LypighNbOlbsRULVMsZNB9ynV1223v8HAPdkOvU.jpg")
+        XCTAssertEqual(articlesData?.data.children[0].title, "this is a random title")
+        XCTAssertEqual(articlesData?.data.children[0].body, "this is a random body")
+        XCTAssertEqual(articlesData?.data.children[0].thumbnailUrl, "https://b.thumbs.redditmedia.com/ZCc1LypighNbOlbsRULVMsZNB9ynV1223v8HAPdkOvU.jpg")
         
-        XCTAssertEqual(articlesData?.articles[1].title, "this is another random title")
-        XCTAssertEqual(articlesData?.articles[1].body, "this is another random body")
-        XCTAssertNil(articlesData?.articles[1].thumbnailUrl)
+        XCTAssertEqual(articlesData?.data.children[1].title, "this is another random title")
+        XCTAssertEqual(articlesData?.data.children[1].body, "this is another random body")
+        XCTAssertNil(articlesData?.data.children[1].thumbnailUrl)
     }
     
     // MARK: Private
     
     private lazy var articlesData = {
-        try? JSONDecoder().decode(Articles.self, from: articlesJson.data(using: .utf8) ?? Data())
+        try? JSONDecoder().decode(Listing.self, from: articlesJson.data(using: .utf8) ?? Data())
     }()
     
     private let articlesJson =
